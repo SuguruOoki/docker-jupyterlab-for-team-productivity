@@ -1,0 +1,7 @@
+work/*.txt
+work/*.csv
+work/*.ipynb
+work/output/*
+work/task.md
+work/.*
+/*.md

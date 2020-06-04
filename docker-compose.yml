@@ -1,0 +1,14 @@
+version: "3"
+services:
+  jupyter:
+    image: jupyter/datascience-notebook
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      JUPYTER_ENABLE_LAB: 1
+    ports:
+      - 8888:8888
+    volumes:
+      - ./work:/home/jovyan/work
+    command: start-notebook.sh --NotebookApp.token=''
